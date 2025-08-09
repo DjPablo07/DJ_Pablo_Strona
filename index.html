@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DJ Pablo – Wkraczasz w strefę</title>
+<link rel="stylesheet" href="css/styles.css">
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(circle at center, #220022, #000);
+  color: #ffccff;
+  text-align: center;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% { text-shadow: 0 0 10px #ff66ff; }
+  50% { text-shadow: 0 0 30px #ff33cc; }
+  100% { text-shadow: 0 0 10px #ff66ff; }
+}
+h1 {
+  font-size: 3em;
+}
+</style>
+</head>
+<body>
+  <div>
+    <h1>🎵 Wkraczasz do strefy DJ Pablo 🎵</h1>
+    <audio autoplay>
+      <source src="audio/intro-beat.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+<script>
+setTimeout(function(){
+  window.location.href = "main.html";
+}, 7000);
+</script>
+</body>
+</html>
