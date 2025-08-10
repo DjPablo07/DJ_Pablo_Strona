@@ -1,0 +1,208 @@
+/* ===============================
+   DJ Pablo – Neon Club Deluxe
+   =============================== */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Czcionki */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Russo+One&display=swap');
+
+/* Zmienne kolorów */
+:root {
+    --primary-color: #ff00ff;
+    --secondary-color: #00ffff;
+    --accent-color: #ff9900;
+    --bg-color: #050505;
+    --text-color: #ffffff;
+    --neon-shadow: 0 0 5px var(--primary-color),
+                   0 0 10px var(--primary-color),
+                   0 0 20px var(--primary-color),
+                   0 0 40px var(--primary-color);
+}
+
+/* Globalne tło */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Tło – lasery */
+body<div class="smoke"></div>::before, body::after {
+    content: "";
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -3;
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(255,0,255,0.08) 0px,
+        rgba(255,0,255,0.08) 2px,
+        transparent 2px,
+        transparent 6px
+    );
+    animation: lasers 20s linear infinite;
+}
+
+body::after {
+    background: repeating-linear-gradient(
+        -45deg,
+        rgba(0,255,255,0.08) 0px,
+        rgba(0,255,255,0.08) 2px,
+        transparent 2px,
+        transparent 6px
+    );
+    animation: lasers 25s linear infinite reverse;
+}
+
+@keyframes lasers {
+    from { transform: translate(0,0) rotate(0deg); }
+    to { transform: translate(-25%, -25%) rotate(360deg); }
+}
+
+/* Dym w tle */
+.smoke {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255,255,255,0.04) 0%, transparent 70%);
+    z-index: -2;
+    animation: smokeMove 80s ease-in-out infinite;
+    filter: blur(80px);
+}
+
+@keyframes smokeMove {
+    0% { transform: translate(0,0) rotate(0deg); }
+    50% { transform: translate(-10%, -15%) rotate(180deg); }
+    100% { transform: translate(0,0) rotate(360deg); }
+}
+
+/* Intro ekran */
+.intro-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('../images/intro-bg.jpg') center/cover no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.intro-title {
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-shadow: var(--neon-shadow);
+    animation: neonBreath 3s ease-in-out infinite;
+}
+
+@keyframes neonBreath {
+    0%, 100% {
+        text-shadow: 0 0 5px var(--primary-color),
+                     0 0 15px var(--primary-color),
+                     0 0 30px var(--primary-color),
+                     0 0 60px var(--secondary-color);
+    }
+    50% {
+        text-shadow: 0 0 10px var(--secondary-color),
+                     0 0 25px var(--secondary-color),
+                     0 0 50px var(--secondary-color),
+                     0 0 100px var(--primary-color);
+    }
+}
+
+/* Płynne wejście stron */
+.page-transition {
+    opacity: 0;
+    animation: fadeIn 1.4s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Nawigacja */
+nav {
+    background-color: rgba(0,0,0,0.85);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    border-bottom: 2px solid var(--primary-color);
+    box-shadow: 0 0 20px var(--primary-color);
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: relative;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background: var(--secondary-color);
+    box-shadow: 0 0 10px var(--secondary-color);
+    transition: width 0.3s;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Galeria */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.gallery img {
+    width: 100%;
+    border: 3px solid var(--primary-color);
+    border-radius: 12px;
+    box-shadow: var(--neon-shadow);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px var(--secondary-color),
+                0 0 40px var(--secondary-color),
+                0 0 80px var(--primary-color);
+}
+
+/* Stopka */
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    background: rgba(0,0,0,0.7);
+    border-top: 2px solid var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+}
