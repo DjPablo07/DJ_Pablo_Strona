@@ -1,34 +1,368 @@
-<!DOCTYPE html>
+[20:08, 12.08.2025] Pawel 🐗: <!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DJ Pablo - Strona Główna</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body class="page-transition">
+    <title>DJPablo.org</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        /* Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
-<div class="smoke"></div>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
 
+        /* Intro */
+        #intro {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: #000;
+            display: flex;
+            flex-direction: column;
+            justify…
+[20:11, 12.08.2025] Pawel 🐗: <!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJPablo.org</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        /* Intro */
+        #intro {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: #000;
+            display: flex;
+            flex-direction: column;
+            ju…
+[16:27, 15.08.2025] Pawel 🐗: <!DOCTYPE html><html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DJ Pablo — Cosmic Neon</title>
+  <meta name="description" content="Oficjalna strona DJ Pablo — cosmic neon vibes, news, galeria i odsłuch muzyki w jednym pliku." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --anthracite:#1e1f22;            /* tło */
+      --anthracite-2:#111216;          /* ciemniejszy */
+      --neon:#39ffbf;                  …
+[18:16, 15.08.2025] Pawel 🐗: <!DOCTYPE html><html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DJ Pablo — oficjalna strona</title>
+  <meta name="description" content="DJ Pablo — kosmiczne brzmienia, newsy, galeria i odsłuchy w jednym pliku." />  <!-- Neon/kosmiczne fonty -->  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet" />  <style>
+    :root {
+      --bg: #15181b;           /* antracyt */
+      --bg-2: #0f1114;         /* głębszy antracyt */
+      --neon: #39ff14;         /* seledyn-neon */
+      --neon-2: #00ffa8;       /* drugi neon */
+      --text: #e7f5f0;         /* jasny tekst */
+      --muted: #a8c2bb;
+      --card: #1b1f24;
+      --glass: rgba(0, 255, 168, 0.07);
+      --outline: rgba(0, 255, 168, 0.35);
+      --shadow: 0 18px 45px rgba(0, 255, 168, 0.18);
+      --grad: radial-gradient(800px 500px at 70% 20%, rgba(0,255,168,0.06), transparent),
+              radial-gradient(600px 400px at 20% 80%, rgba(57,255,20,0.05), transparent);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: var(--grad), var(--bg);
+      color: var(--text);
+      font-family: "Rajdhani", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Subtelne gwiazdy / szum kosmiczny */
+    .stars, .stars2 {
+      position: fixed; inset: 0; pointer-events: none; z-index: 0;
+      background-image:
+        radial-gradient(1px 1px at 12% 22%, rgba(255,255,255,0.35), transparent),
+        radial-gradient(1px 1px at 33% 77%, rgba(255,255,255,0.28), transparent),
+        radial-gradient(1px 1px at 68% 48%, rgba(255,255,255,0.4), transparent),
+        radial-gradient(1px 1px at 88% 14%, rgba(255,255,255,0.3), transparent),
+        radial-gradient(1px 1px at 45% 12%, rgba(255,255,255,0.22), transparent);
+      opacity: .5;
+      animation: twinkle 10s linear infinite;
+    }
+    .stars2 { animation-duration: 16s; opacity:.35; }
+    @keyframes twinkle { 0%,100%{ filter: drop-shadow(0 0 0 var(--neon)); } 50%{ filter: drop-shadow(0 0 2px var(--neon)); } }
+
+    /* INTRO overlay */
+    #intro {
+      position: fixed; inset: 0; z-index: 50; display: grid; place-items: center;
+      background: linear-gradient(180deg, rgba(0,0,0,.85), rgba(0,0,0,.65));
+      border-bottom: 1px solid var(--outline);
+      animation: introFade 5s forwards;
+    }
+    @keyframes introFade { 0%{opacity:1} 85%{opacity:1} 100%{opacity:0; visibility:hidden} }
+    .intro-inner { text-align: center; }
+    .logo {
+      font-family: "Orbitron"; font-weight: 900; letter-spacing: .12em; font-size: clamp(36px, 8vw, 76px);
+      color: var(--neon); text-shadow: 0 0 18px rgba(57,255,20,.6), 0 0 60px rgba(0,255,168,.25);
+      transform: translateY(6px);
+      animation: glowPulse 2.2s ease-in-out infinite;
+    }
+    @keyframes glowPulse { 0%,100%{ text-shadow: 0 0 10px rgba(57,255,20,.6), 0 0 40px rgba(0,255,168,.25);} 50%{ text-shadow: 0 0 26px rgba(57,255,20,.9), 0 0 80px rgba(0,255,168,.35);} }
+    .intro-sub { margin-top: 10px; color: var(--muted); font-size: 18px; }
+    .skip-btn { margin-top: 22px; background: transparent; border: 1px solid var(--outline); color: var(--text); padding: 10px 16px; border-radius: 12px; cursor: pointer; font-weight: 700; }
+    .skip-btn:hover { color: var(--neon); box-shadow: var(--shadow); }
+
+    /* NAV */
+    header { position: sticky; top: 0; z-index: 20; backdrop-filter: blur(10px); background: linear-gradient( to right, rgba(0,0,0,.35), rgba(0,0,0,.15)); border-bottom: 1px solid var(--outline); }
+    nav { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 16px; padding: 12px 18px; }
+    .brand { font-family: "Orbitron", sans-serif; font-weight: 800; letter-spacing: .08em; }
+    .brand span { color: var(--neon); text-shadow: 0 0 8px rgba(57,255,20,.55); }
+    nav a { color: var(--text); text-decoration: none; padding: 8px 12px; border-radius: 999px; border: 1px solid transparent; transition: .25s ease; font-weight: 600; }
+    nav a:hover { border-color: var(--outline); box-shadow: var(--shadow); color: var(--neon); }
+
+    /* HERO */
+    .hero { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; padding: 64px 18px 28px; display: grid; gap: 20px; grid-template-columns: 1.1fr .9fr; align-items: center; }
+    .glow-title { font-family: "Orbitron", sans-serif; font-size: clamp(36px, 6vw, 64px); line-height: 1.05; letter-spacing: .04em; margin: 0 0 10px; text-shadow: 0 0 24px rgba(57,255,20,.35); }
+    .glow-title strong { color: var(--neon); }
+    .hero p { color: var(--muted); font-size: 18px; margin: 0 0 16px; }
+    .cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn { background: linear-gradient(135deg, rgba(0,255,168,.18), rgba(57,255,20,.12)); border: 1px solid var(--outline); color: var(--text); padding: 12px 16px; border-radius: 14px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; transition: .25s; box-shadow: var(--shadow); }
+    .btn:hover { transform: translateY(-1px) scale(1.01); color: var(--neon); }
+    .card-hero { background: linear-gradient(180deg, rgba(0, 255, 168, .07), rgba(0,0,0,.25)); border: 1px solid var(--outline); border-radius: 18px; padding: 16px; box-shadow: var(--shadow); }
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 10px; }
+    .stat { background: var(--glass); border: 1px solid var(--outline); border-radius: 14px; padding: 14px; text-align: center; }
+    .stat b { font-family: "Orbitron"; color: var(--neon); font-size: 22px; }
+
+    /* SEKCJE */
+    section { position: relative; z-index: 1; padding: 40px 18px; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+    .section-title { font-family: "Orbitron"; font-size: clamp(22px, 3.5vw, 32px); letter-spacing: .06em; margin: 0 0 14px; }
+    .section-sub { color: var(--muted); margin: 0 0 22px; }
+
+    /* NEWS — przewijana taśma */
+    .news-ticker { border: 1px solid var(--outline); border-radius: 16px; overflow: hidden; background: linear-gradient(180deg, rgba(0,0,0,.2), rgba(0,0,0,.35)); }
+    .ticker-track { display: flex; gap: 24px; padding: 12px 0; animation: ticker 35s linear infinite; will-change: transform; }
+    .news-ticker:hover .ticker-track { animation-play-state: paused; }
+    @keyframes ticker { 0%{ transform: translateX(0);} 100%{ transform: translateX(-50%);} }
+    .badge { border: 1px solid var(--outline); border-radius: 999px; padding: 6px 10px; font-weight: 700; color: var(--neon); }
+    .chip { border: 1px solid var(--outline); border-radius: 999px; padding: 6px 10px; color: var(--text); }
+    .news-item { white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; padding: 0 10px; }
+
+    /* GALERIA */
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+    .g-item { position: relative; border-radius: 14px; overflow: hidden; border: 1px solid var(--outline); background: var(--card); }
+    .g-item img { width: 100%; height: 160px; object-fit: cover; display: block; filter: saturate(1.1) contrast(1.05); transition: .3s; }
+    .g-item:hover img { transform: scale(1.04); }
+
+    /* Lightbox (pure CSS :target) */
+    .lightbox { position: fixed; inset: 0; background: rgba(0,0,0,.85); display: none; place-items: center; z-index: 40; }
+    .lightbox:target { display: grid; }
+    .lightbox img { max-width: 92vw; max-height: 86vh; border-radius: 12px; border: 1px solid var(--outline); box-shadow: var(--shadow); }
+    .close { position: fixed; top: 18px; right: 18px; background: transparent; border: 1px solid var(--outline); color: var(--text); padding: 8px 12px; border-radius: 999px; text-decoration: none; font-weight: 700; }
+
+    /* ODSŁUCHY */
+    .audio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+    .audio-card { border: 1px solid var(--outline); border-radius: 14px; padding: 12px; background: linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.4)); }
+    .audio-card h4 { margin: 0 0 8px; font-family: "Orbitron"; font-size: 16px; letter-spacing: .06em; }
+    audio { width: 100%; display: block; }
+
+    /* FOOTER */
+    footer { border-top: 1px solid var(--outline); background: linear-gradient(180deg, rgba(0,0,0,.1), rgba(0,0,0,.25)); padding: 30px 18px; color: var(--muted); text-align: center; }
+
+    /* FAB — muzyka */
+    .fab { position: fixed; bottom: 16px; right: 16px; z-index: 30; display: grid; gap: 8px; justify-items: end; }
+    .play-btn { background: var(--neon); color: #08210f; border: none; border-radius: 999px; padding: 12px 16px; font-weight: 900; letter-spacing: .06em; box-shadow: 0 10px 25px rgba(57,255,20,.35); cursor: pointer; }
+    .toast { background: #0c130f; color: var(--text); border: 1px solid var(--outline); padding: 10px 14px; border-radius: 12px; max-width: 260px; }
+
+    /* RESPONSYWNOŚĆ */
+    @media (max-width: 880px){ .hero{ grid-template-columns: 1fr; padding-top: 36px; } }
+  </style></head>
+<body>
+  <div class="stars"></div>
+  <div class="stars2"></div>  <!-- INTRO 5s z możliwością SKIP -->  <div id="intro">
+    <div class="intro-inner">
+      <div class="logo">DJ PABLO</div>
+      <div class="intro-sub">Kosmiczny start… 5 sekund i lecimy</div>
+      <button class="skip-btn" id="skipIntro">Pomiń intro</button>
+    </div>
+  </div>  <!-- Nawigacja -->  <header>
     <nav>
-        <a href="index.html">Start</a>
-        <a href="galeria.html">Galeria</a>
-        <a href="#">Kontakt</a>
+      <div class="brand">DJ<span>PABLO</span></div>
+      <a href="#news">Newsy</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#odsluchy">Odsłuchy</a>
+      <a href="#kontakt">Kontakt</a>
     </nav>
+  </header>  <!-- HERO -->  <section class="hero">
+    <div>
+      <h1 class="glow-title">Kosmiczne <strong>brzmienia</strong>, ziemskie <strong>parkiety</strong>.</h1>
+      <p>Sety, eventy, niespodzianki. Przewijaj w dół: newsy lecą jak komety, galeria błyszczy, a odsłuchy grają, gdy klikniesz PLAY.</p>
+      <div class="cta-row">
+        <a class="btn" href="#odsluchy">▶️ Start odsłuchu</a>
+        <a class="btn" href="#galeria">📷 Zobacz galerię</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>128</b><div>w BPM sercu</div></div>
+        <div class="stat"><b>∞</b><div>gwiezdnych bitów</div></div>
+        <div class="stat"><b>24/7</b><div>kosmicznej energii</div></div>
+      </div>
+    </div>
+    <div class="card-hero">
+      <img src="images/hero.jpg" alt="DJ Pablo na scenie" style="width:100%; border-radius:12px; border:1px solid var(--outline);"/>
+    </div>
+  </section>  <!-- NEWS TICKER -->  <section id="news">
+    <div class="section-inner">
+      <h2 class="section-title">Newsy</h2>
+      <p class="section-sub">Taśma przewija się w pętli. Najedź myszką, aby zatrzymać.</p>
+      <div class="news-ticker">
+        <div class="ticker-track" id="ticker">
+          <!-- powielone dwa razy, by uzyskać bezszwowe przewijanie -->
+          <div class="news-item"><span class="badge">25.08</span> Duisburg — Open Air — widzimy się!</div>
+          <div class="news-item"><span class="badge">09.09</span> Düsseldorf — Festival House Beats — gramy do rana.</div>
+          <div class="news-item"><span class="chip">Nowy set</span> „Stellar Drive” już w odsłuchach.</div>
+          <div class="news-item"><span class="chip">Galeria</span> świeże foty z ostatniej nocy!</div>
+          <div class="news-item"><span class="chip">Booking</span> kontakt na dole strony.</div><div class="news-item"><span class="badge">25.08</span> Duisburg — Open Air — widzimy się!</div>
+      <div class="news-item"><span class="badge">09.09</span> Düsseldorf — Festival House Beats — gramy do rana.</div>
+      <div class="news-item"><span class="chip">Nowy set</span> „Stellar Drive” już w odsłuchach.</div>
+      <div class="news-item"><span class="chip">Galeria</span> świeże foty z ostatniej nocy!</div>
+      <div class="news-item"><span class="chip">Booking</span> kontakt na dole strony.</div>
+    </div>
+  </div>
+</div>
 
-    <header style="text-align:center; padding:2rem;">
-        <h1 style="color: var(--primary-color); text-shadow: var(--neon-shadow);">Witaj w świecie DJ Pablo</h1>
-        <p>Muzyka, światła i energia – to mój świat!</p>
-    </header>
+  </section>  <!-- GALERIA -->  <section id="galeria">
+    <div class="section-inner">
+      <h2 class="section-title">Galeria</h2>
+      <p class="section-sub">Kliknij zdjęcie, by otworzyć w lightboxie. Wymień pliki w folderze <code>/images</code>.</p>
+      <div class="gallery">
+        <a class="g-item" href="#g1">
+          <img src="images/galeria1.jpg" alt="Koncert — lasery"/>
+        </a>
+        <a class="g-item" href="#g2">
+          <img src="images/galeria2.jpg" alt="Publika"/>
+        </a>
+        <a class="g-item" href="#g3">
+          <img src="images/galeria3.jpg" alt="Decks"/>
+        </a>
+        <a class="g-item" href="#g4">
+          <img src="images/galeria4.jpg" alt="Scena"/>
+        </a>
+        <a class="g-item" href="#g5">
+          <img src="images/galeria5.jpg" alt="Vinyl"/>
+        </a>
+        <a class="g-item" href="#g6">
+          <img src="images/galeria6.jpg" alt="Światła"/>
+        </a>
+      </div>
+    </div>
+  </section>  <!-- LIGHTBOXY -->  <div id="g1" class="lightbox"><a class="close" href="#galeria">✕ Zamknij</a><img src="images/galeria1.jpg" alt="Koncert — lasery"/></div>
+  <div id="g2" class="lightbox"><a class="close" href="#galeria">✕ Zamknij</a><img src="images/galeria2.jpg" alt="Publika"/></div>
+  <div id="g3" class="lightbox"><a class="close" href="#galeria">✕ Zamknij</a><img src="images/galeria3.jpg" alt="Decks"/></div>
+  <div id="g4" class="lightbox"><a class="close" href="#galeria">✕ Zamknij</a><img src="images/galeria4.jpg" alt="Scena"/></div>
+  <div id="g5" class="lightbox"><a class="close" href="#galeria">✕ Zamknij</a><img src="images/galeria5.jpg" alt="Vinyl"/></div>
+  <div id="g6" class="lightbox"><a class="close" href="#galeria">✕ Zamknij</a><img src="images/galeria6.jpg" alt="Światła"/></div>  <!-- ODSŁUCHY -->  <section id="odsluchy">
+    <div class="section-inner">
+      <h2 class="section-title">Odsłuchy</h2>
+      <p class="section-sub">Podmień ścieżki do plików w <code>/music</code> lub wstaw linki (SoundCloud/YouTube). Autoodtwarzanie w przeglądarkach bywa blokowane — kliknij przycisk PLAY (w prawym dolnym rogu), by wystartować muzykę w tle.</p><div class="audio-grid">
+    <div class="audio-card">
+      <h4>Stellar Drive (preview)</h4>
+      <audio controls preload="none">
+        <source src="music/stellar-drive.mp3" type="audio/mpeg"/>
+      </audio>
+      <div style="margin-top:8px">
+        <a class="btn" href="https://youtu.be/" target="_blank" rel="noopener">▶️ YouTube</a>
+        <a class="btn" href="https://soundcloud.com/" target="_blank" rel="noopener">☁️ SoundCloud</a>
+      </div>
+    </div>
+    <div class="audio-card">
+      <h4>Night Nebula (mix)</h4>
+      <audio controls preload="none">
+        <source src="music/night-nebula.mp3" type="audio/mpeg"/>
+      </audio>
+    </div>
+    <div class="audio-card">
+      <h4>Retro Laser (edit)</h4>
+      <audio controls preload="none">
+        <source src="music/retro-laser.mp3" type="audio/mpeg"/>
+      </audio>
+    </div>
+  </div>
+</div>
 
-    <main style="padding:2rem;">
-        <h2>Aktualności</h2>
-        <p>Już wkrótce nowe imprezy i wydarzenia! Sprawdź zakładkę Galeria, aby zobaczyć, jak bawimy się na eventach!</p>
-    </main>
+  </section>  <!-- KONTAKT -->  <section id="kontakt">
+    <div class="section-inner">
+      <h2 class="section-title">Kontakt / Booking</h2>
+      <p class="section-sub">Mail: <a href="mailto:booking@djpablo.org">booking@djpablo.org</a> • IG: <a href="#">@dj.pablo</a></p>
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+        <div class="audio-card">
+          <h4>Info techniczne</h4>
+          <p class="section-sub">CDJ-2000NXS2 / DJM-900NXS2, preferowany 128–132 BPM, monitor L/R na scenie.</p>
+        </div>
+        <div class="audio-card">
+          <h4>Press</h4>
+          <p class="section-sub">Bio, zdjęcia i logo dostępne na prośbę. Współprace: kluby, festiwale, eventy.</p>
+        </div>
+      </div>
+    </div>
+  </section>  <footer>
+    © <span id="year"></span> DJ Pablo. Wszystkie prawa zastrzeżone. Made with ❤️ i neonem.
+  </footer>  <!-- Muzyka w tle (sterowana przyciskiem PLAY) -->  <audio id="bgm" loop preload="none">
+    <source src="music/background-loop.mp3" type="audio/mpeg" />
+  </audio>  <!-- FAB: przycisk PLAY + toast -->  <div class="fab">
+    <div class="toast" id="toast">Naciśnij PLAY, by włączyć muzykę w tle.</div>
+    <button class="play-btn" id="togglePlay">PLAY</button>
+  </div>  <script>
+    // Rok w stopce
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-    <footer>
-        &copy; 2025 DJ Pablo. Wszystkie prawa zastrzeżone.
-    </footer>
+    // Intro: auto-hide po 5s + opcja SKIP
+    const intro = document.getElementById('intro');
+    const skipBtn = document.getElementById('skipIntro');
+    const hideIntro = () => { intro.style.display = 'none'; };
+    setTimeout(hideIntro, 5000);
+    skipBtn.addEventListener('click', hideIntro);
 
-</body>
+    // Muzyka w tle – wymagany gest użytkownika
+    const bgm = document.getElementById('bgm');
+    const toggleBtn = document.getElementById('togglePlay');
+    const toast = document.getElementById('toast');
+    let isPlaying = false;
+
+    function updateBtn(){ toggleBtn.textContent = isPlaying ? 'PAUSE' : 'PLAY'; }
+
+    toggleBtn.addEventListener('click', async () => {
+      try {
+        if (!isPlaying) { await bgm.play(); isPlaying = true; toast.style.display = 'none'; }
+        else { bgm.pause(); isPlaying = false; }
+        updateBtn();
+      } catch (e) { console.warn('Autoplay blocked or error:', e); }
+    });
+
+    // Jeśli użytkownik zagra dowolny <audio>, pauzuj tło
+    document.querySelectorAll('audio').forEach(a => {
+      if (a.id === 'bgm') return;
+      a.addEventListener('play', () => { if (isPlaying) { bgm.pause(); isPlaying = false; updateBtn(); } });
+    });
+
+    // Duplikacja elementów w tickerze, jeśli za mało szerokości (safety)
+    const track = document.getElementById('ticker');
+    if (track && track.scrollWidth < window.innerWidth * 1.2){ track.innerHTML += track.innerHTML; }
+  </script></body>
 </html>
